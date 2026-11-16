@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaTrack — Exclusão de conta e dados</title>
+  <title>JavaTrack — Política de Privacidade</title>
   <style>
     :root { color-scheme: light dark; }
     body {
@@ -16,85 +16,112 @@
     h1 { font-size: 1.6rem; }
     h2 { font-size: 1.2rem; margin-top: 2rem; }
     li { margin-bottom: 0.4rem; }
-    .aviso {
-      border-left: 4px solid #c0392b;
-      padding: 8px 12px;
-      background: rgba(192, 57, 43, 0.08);
-      margin: 1rem 0;
-    }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid rgba(128,128,128,0.4); padding: 6px 10px; text-align: left; vertical-align: top; }
     footer { margin-top: 3rem; font-size: 0.85rem; opacity: 0.7; }
   </style>
 </head>
 <body>
-  <h1>JavaTrack — Exclusão de conta e dados</h1>
+  <h1>Política de Privacidade — JavaTrack</h1>
+  <p><em>Última atualização: 16 de novembro de 2026</em></p>
   <p>
-    Esta página explica como solicitar a exclusão da sua conta e dos seus dados no
-    aplicativo <strong>JavaTrack</strong> (pacote <code>br.com.javatrack.app</code>),
-    conforme a Lei Geral de Proteção de Dados (LGPD) e a política de dados do Google Play.
+    Esta Política de Privacidade descreve como o aplicativo <strong>JavaTrack</strong>
+    (pacote <code>br.com.javatrack.app</code>), desenvolvido por Vinicius Fernando
+    ("nós"), coleta, usa, armazena e protege os dados pessoais dos usuários, em
+    conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — LGPD).
   </p>
 
-  <h2>Como solicitar a exclusão da conta</h2>
-  <ol>
-    <li>
-      Envie um e-mail para
-      <a href="mailto:SUPORTE@EXEMPLO.COM.BR">SUPORTE@EXEMPLO.COM.BR</a>
-      a partir do <strong>mesmo endereço de e-mail cadastrado</strong> na sua conta JavaTrack,
-      com o assunto <em>"Exclusão de conta"</em>.
-    </li>
-    <li>
-      Para sua segurança, confirmaremos a titularidade da conta respondendo ao e-mail
-      cadastrado antes de executar a exclusão.
-    </li>
-    <li>
-      A exclusão é processada em até 7 dias após a confirmação e você receberá um
-      e-mail informando a conclusão.
-    </li>
-  </ol>
-
-  <div class="aviso">
-    <strong>Atenção:</strong> a exclusão da conta é <strong>imediata e irreversível</strong>
-    após processada. Não há período de carência nem possibilidade de desfazer.
-    Você pode criar uma nova conta com o mesmo e-mail depois, mas sem nenhum dado anterior.
-  </div>
-
-  <h2>Dados que são excluídos</h2>
-  <ul>
-    <li>Endereço de e-mail, nome e senha;</li>
-    <li>Sessões ativas e tokens de acesso;</li>
-    <li>Documentos enviados;</li>
-    <li>Fotos anexadas aos registros;</li>
-    <li>Coordenadas exatas (localização) dos seus registros;</li>
-    <li>Observações e textos livres dos seus registros.</li>
-  </ul>
-
-  <h2>Dados que são mantidos (e por quê)</h2>
-  <ul>
-    <li>
-      <strong>Registros de atividade em forma anonimizada e agregada</strong>
-      (contagens por município usadas no mapa de calor) — mantidos por interesse
-      legítimo de monitoramento populacional do javali, sem qualquer vínculo com você;
-    </li>
-    <li>
-      <strong>Histórico de rankings e medalhas</strong> — mantidos de forma anonimizada
-      para preservar a integridade das temporadas já encerradas;
-    </li>
-    <li>
-      <strong>Trilhas de auditoria</strong> — mantidas pelo prazo legal, como base
-      de cumprimento de obrigação legal/regulatória (LGPD, art. 7º, II).
-    </li>
-  </ul>
-  <p>Nenhum dado mantido permite identificar você após a exclusão.</p>
-
-  <h2>Exclusão parcial de dados (sem excluir a conta)</h2>
+  <h2>1. Dados que coletamos</h2>
+  <table>
+    <tr><th>Dado</th><th>Quando é coletado</th><th>Obrigatório?</th></tr>
+    <tr><td>Nome completo, apelido público e e-mail</td><td>No cadastro da conta</td><td>Sim</td></tr>
+    <tr><td>Senha (armazenada apenas como hash criptográfico)</td><td>No cadastro da conta</td><td>Sim</td></tr>
+    <tr><td>Localização aproximada e exata</td><td>Ao criar um registro de atividade, se você permitir</td><td>Não — você pode negar a permissão e informar a UF manualmente</td></tr>
+    <tr><td>Fotos</td><td>Ao anexar uma foto a um registro de atividade</td><td>Não</td></tr>
+    <tr><td>Documento de registro de caçador (CR/SIMAF)</td><td>Se você optar pela verificação de conta</td><td>Não</td></tr>
+    <tr><td>Registros de atividade (dados do abate, observações)</td><td>Ao usar a funcionalidade principal do app</td><td>Criados por sua escolha</td></tr>
+  </table>
   <p>
-    Dentro do app você pode, a qualquer momento, excluir registros de atividade
-    individuais (incluindo as fotos e a localização associadas a eles), sem precisar
-    excluir a conta.
+    Não coletamos contatos, mensagens, histórico de navegação, identificadores de
+    publicidade nem dados de saúde. O app não contém anúncios nem SDKs de análise
+    de comportamento.
+  </p>
+
+  <h2>2. Para que usamos os dados</h2>
+  <ul>
+    <li><strong>Funcionamento do app:</strong> autenticação, exibição do seu perfil e apelido em rankings, posicionamento dos seus registros no mapa de calor e cômputo de temporadas e medalhas;</li>
+    <li><strong>Gerenciamento da conta:</strong> criação, login e recuperação de acesso;</li>
+    <li><strong>Verificação e prevenção de fraudes:</strong> o documento CR/SIMAF é usado exclusivamente para verificar seu registro como caçador e manter a integridade dos rankings;</li>
+    <li><strong>Monitoramento populacional do javali:</strong> contagens de registros agregadas por município (sem identificação pessoal) alimentam o mapa de calor público.</li>
+  </ul>
+
+  <h2>3. Compartilhamento de dados</h2>
+  <p>
+    <strong>Não compartilhamos seus dados pessoais com terceiros.</strong> Os dados
+    trafegam exclusivamente entre o app e os nossos servidores. Utilizamos
+    infraestrutura de nuvem contratada (Oracle Cloud Infrastructure) apenas como
+    operadora de hospedagem, sem acesso autorizado ao conteúdo dos dados.
+    Dados agregados e anonimizados por município (contagens do mapa de calor) são
+    exibidos publicamente no app, mas não permitem identificar nenhum usuário.
+  </p>
+  <p>
+    Se você optar pelo login com Google ou Apple, o provedor escolhido nos informa
+    apenas seu nome e e-mail para criação/acesso da conta, conforme a política de
+    privacidade do próprio provedor.
+  </p>
+
+  <h2>4. Armazenamento e segurança</h2>
+  <ul>
+    <li>Todo o tráfego entre o app e os servidores usa criptografia TLS (HTTPS);</li>
+    <li>Senhas são armazenadas apenas como hash criptográfico — nunca em texto puro;</li>
+    <li>No dispositivo, as credenciais de sessão ficam no armazenamento seguro do sistema operacional;</li>
+    <li>Coordenadas exatas dos registros nunca são expostas a outros usuários — apenas agregados por município.</li>
+  </ul>
+
+  <h2>5. Retenção e exclusão</h2>
+  <p>
+    Seus dados são mantidos enquanto a conta existir. Você pode, a qualquer momento:
+  </p>
+  <ul>
+    <li><strong>Excluir registros individuais</strong> (incluindo foto e localização associadas) dentro do próprio app;</li>
+    <li><strong>Excluir a conta e os dados associados</strong>, conforme as instruções em
+      <a href="https://vinaofernando.github.io/javatrack-site/">nossa página de exclusão de conta</a>.
+      A exclusão é imediata e irreversível: e-mail, nome, senha, sessões, documentos, fotos
+      e coordenadas exatas são apagados. Contagens agregadas anônimas, histórico de
+      rankings anonimizado e trilhas de auditoria são mantidos pelos prazos legais
+      (LGPD, art. 7º, II e IX), sem qualquer vínculo com você.</li>
+  </ul>
+
+  <h2>6. Seus direitos (LGPD)</h2>
+  <p>
+    Nos termos do art. 18 da LGPD, você pode solicitar: confirmação do tratamento,
+    acesso aos dados, correção, anonimização, portabilidade, eliminação e informação
+    sobre compartilhamentos. Para exercer qualquer direito, escreva para
+    <a href="mailto:SUPORTE@EXEMPLO.COM.BR">SUPORTE@EXEMPLO.COM.BR</a>.
+  </p>
+
+  <h2>7. Crianças e adolescentes</h2>
+  <p>
+    O JavaTrack destina-se ao manejo legal de javalis por caçadores registrados e
+    <strong>não é direcionado a menores de 18 anos</strong>. Não coletamos
+    intencionalmente dados de menores.
+  </p>
+
+  <h2>8. Alterações desta política</h2>
+  <p>
+    Esta política pode ser atualizada; a data da última revisão aparece no topo.
+    Mudanças relevantes serão comunicadas no app ou por e-mail.
+  </p>
+
+  <h2>9. Contato</h2>
+  <p>
+    Controlador: Vinicius Fernando<br />
+    E-mail: <a href="mailto:SUPORTE@EXEMPLO.COM.BR">SUPORTE@EXEMPLO.COM.BR</a>
   </p>
 
   <footer>
-    JavaTrack — desenvolvido por Vinicius Fernando.<br />
-    Dúvidas sobre privacidade: <a href="mailto:SUPORTE@EXEMPLO.COM.BR">SUPORTE@EXEMPLO.COM.BR</a>
+    JavaTrack — Política de Privacidade ·
+    <a href="https://vinaofernando.github.io/javatrack-site/">Exclusão de conta</a>
   </footer>
 </body>
 </html>
